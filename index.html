@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
     <style>
         body{
             background-color: #282828;
             display: block;
         }
 h1 {
-  color: rgb(255, 84, 84);
-  background-color: rgb(255, 206, 80);
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(255,  84,  84);
+  background-color: rgb(255,  206,  80);
+  font-family:Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
   text-align: center;
 }
 
 .navigation{
 border-radius: 5px; height: 50px;
 }
+
 .navigation_bar{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -28,28 +29,21 @@ border-radius: 5px; height: 50px;
 }
 
 .page{
-  background-color: rgb(57, 57, 57);
-  margin-left: 0px;
-  margin-right: 0px;
+  background-color: rgb(57,  57,  57);
+  margin-left: 250px;
+  margin-right: 250px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 10px;
 }
-@media screen and (min-width:750px) {
-            .page {
-               margin-left: 250px;
-               margin-right: 250px;
-               margin-top: 0px;
-               margin-bottom: 0px;
-            }
-        }
+
 .intro{
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
 color: coral; 
 font-size: 25px;
 }
 p{
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Times New Roman',  Times,  serif;
     font-size: 30px;
 }
 img{
@@ -58,32 +52,25 @@ img{
 .img2{
     height: 300px;
 }
-.div1{
-grid-column: 1;
-grid-row: 1;
-margin-left: 0px;
-margin-top: 10px;
-}
-.div2{
-width: 400px;
-padding-right: 20px;
-}
+
 .titre{
-  color: rgb(255, 133, 93);
-  background-color: rgb(2, 100, 186);
+  color: rgb(255,  133,  93);
+  background-color: rgb(2,  100,  186);
   padding: 5px;
   font-weight: bold;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Verdana,  Geneva,  Tahoma,  sans-serif;
 }
 .texte{
-  color:aliceblue
+  color:aliceblue;
+  font-family:'Times New Roman',  Times,  serif;
+  font-size: 25px;
 }
 .légende{
   color: bisque;
   font-weight: bold;
 }
 .outro{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
   font-size: 25px;
   color: crimson;
 }
@@ -93,15 +80,13 @@ padding-right: 20px;
   color: aqua; 
   background-color: coral; 
   font-weight: bold; 
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS',  'Lucida Sans Unicode',  'Lucida Grande',  'Lucida Sans',  Arial,  sans-serif;
 }
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
-  text-align: center;
-  height: 30px; 
-  font-family:'Times New Roman', Times, serif;
+  text-align: justify;
+  font-family:'Times New Roman',  Times,  serif;
   font-size: 25px;
   border: none;
   border-radius: 5px;
@@ -109,50 +94,49 @@ padding-right: 20px;
   background-color: whitesmoke;
   color: brown;
   font-weight: bold;
+  margin: 3px;
+  padding: 3px;
+
 }
 
 .tooltip .tooltiptext {
-  vertical-align: center;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
   visibility: hidden;
-  width: 750px;
-  background-color: #555;
+  background-color: rgb(80, 80, 80);
   color: #fff;
-  text-align: center;
+  text-align: left;
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext2 {
-  vertical-align: center;
+  padding: 15px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
-  visibility: hidden;
-  width: 750px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  grid-template-rows: 150px auto;
+  row-gap: 20px;
+  min-width: 500px;
+  max-width: 550px;
   left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
+	transform: translateX(-25%);
+  justify-content: center;
 }
 
+.div1{
+width: auto;
+height: auto;
+position: static;
+padding: 5px;
+}
+img {
+  height: 150px;
+  width: auto;
+}
+.div2{
+min-width: 500px;
+max-width: 550px;
+height: auto;
+position: static;
+margin-top: 10px ;
+
+}
 .tooltip .tooltiptext::after {
   position: absolute;
   top: 100%;
@@ -161,11 +145,13 @@ padding-right: 20px;
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
+  opacity: 0.4;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+
 }
 .logo_akatsuki{
   height: 50px;
@@ -173,7 +159,7 @@ padding-right: 20px;
 }
 .OUTRO
 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
     font-size: 20px;
     color: aliceblue;
 }
@@ -182,13 +168,57 @@ padding-right: 20px;
   grid-template-columns: 3em 9fr ;
   grid-gap: 10px;
 }
-.div2{
+
+.outro_div{
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 5px;
   width: 100%;
 }
 
+@media screen and (max-width:750px) {
+            .page {
+               margin-left: 0px;
+               margin-right: 0px;
+               margin-top: 0px;
+               margin-bottom: 0px;
+            }
+            .tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: rgb(80, 80, 80);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: 150px auto;
+  row-gap: 20px;
+  max-width: 250px;
+  left: 50%;
+	transform: translateX(-25%);
+}
 
+.div1{
+width: 300px;
+max-height: 300px;
+position: static;
+padding: 5px;
+}
+img{
+  max-width: 250px;
+  max-height: 150px;
+}
+.div2{
+max-width: 250px;
+height: auto;
+position: static;
+margin-top: 10px ;
+background-color: aquamarine;
+
+}
+}
     </style>
 
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/logo%20akatsuki.png"/>
@@ -261,21 +291,21 @@ padding-right: 20px;
                      III/ (l.20-24) D'une évasion à l'autre </br>
           </p>
 
- <p class="texte">
+ <div class="texte">
 
-<button class="tooltip" style="background-color:aqua; color:indianred;">  N’exigez point <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/1.jpg"></div><div class="div2"> Adresse au destinataire du récit, marques de deuxième personne, focalisation interne : Appel à l'empathie de l'interlocuteur, amené à partager les sentiments de des Grieux. Négations : récit impossible. </div></span></button> 
+<div class="tooltip" style="background-color:aqua; color:indianred;">  N’exigez point <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/1.jpg"></div><div class="div2"> Adresse au destinataire du récit, marques de deuxième personne, focalisation interne : Appel à l'empathie de l'interlocuteur, amené à partager les sentiments de des Grieux. Négations : récit impossible. </div></span></div> 
 
 de moi que 
 
-<button class="tooltip" style="background-color:aqua; color:indianred;">  je vous décrive <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/1.jpg"></div><div class="div2"> Adresse au destinataire du récit, marques de deuxième personne, focalisation interne : Appel à l'empathie de l'interlocuteur, amené à partager les sentiments de des Grieux. Négations : récit impossible. </div></span></button> 
+<div class="tooltip" style="background-color:aqua; color:indianred;">  je vous décrive <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/1.jpg"></div><div class="div2"> Adresse au destinataire du récit, marques de deuxième personne, focalisation interne : Appel à l'empathie de l'interlocuteur, amené à partager les sentiments de des Grieux. Négations : récit impossible. </div></span></div> 
 
 mes sentiments, ni que 
 
-<button class="tooltip" style="background-color:aqua; color:indianred;"> je vous rapporte <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/1.jpg"></div><div class="div2"> Adresse au destinataire du récit, marques de deuxième personne, focalisation interne : Appel à l'empathie de l'interlocuteur, amené à partager les sentiments de des Grieux. Négations : récit impossible. </div></span></button> 
+<div class="tooltip" style="background-color:aqua; color:indianred;"> je vous rapporte <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/1.jpg"></div><div class="div2"> Adresse au destinataire du récit, marques de deuxième personne, focalisation interne : Appel à l'empathie de l'interlocuteur, amené à partager les sentiments de des Grieux. Négations : récit impossible. </div></span></div> 
 
 ses dernières expressions. Je la perdis ; je reçus d’elle des marques d’amour au moment même qu’elle expirait : 
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> c’est tout ce que j’ai la force de vous apprendre <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/2.jpg"></div><div class="div2"> Ellipse, euphémismes, tonalité pathétique et tragique. Le récit est sobre et épuré, la mort suggérée. Manon est sublimée, à inmais associée à l'image d'une femme aimante qui donne son amour quand elle peut. </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> c’est tout ce que j’ai la force de vous apprendre <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/2.jpg"></div><div class="div2"> Ellipse, euphémismes, tonalité pathétique et tragique. Le récit est sobre et épuré, la mort suggérée. Manon est sublimée, à inmais associée à l'image d'une femme aimante qui donne son amour quand elle peut. </div></span></div> 
 
 de ce fatal et déplorable événement.
 
@@ -287,29 +317,29 @@ de ce fatal et déplorable événement.
 </br></br>
 
 
-<button class="tooltip" style="background-color:rgb(38, 0, 255); color:gold;"> Mon <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/3.jpg"></div><div class="div2"> Première personne du singulier = solitude de des Grieux. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(38, 0, 255); color:gold;"> Mon <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/3.jpg"></div><div class="div2"> Première personne du singulier = solitude de des Grieux. </div></span></div> 
 
-<button class="tooltip" style="background-color:burlywood; color:crimson;"> âme <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/4.jpg"></div><div class="div2"> Lexique religieux = des Grieux interprète l'évènement comme une punition divine. </div></span></button> 
+<div class="tooltip" style="background-color:burlywood; color:crimson;"> âme <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/4.jpg"></div><div class="div2"> Lexique religieux = des Grieux interprète l'évènement comme une punition divine. </div></span></div> 
 
 ne suivit pas la sienne. Le 
 
-<button class="tooltip" style="background-color:burlywood; color:crimson;"> Ciel <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/4.jpg"></div><div class="div2"> Lexique religieux = des Grieux interprète l'évènement comme une punition divine. </div></span></button> 
+<div class="tooltip" style="background-color:burlywood; color:crimson;"> Ciel <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/4.jpg"></div><div class="div2"> Lexique religieux = des Grieux interprète l'évènement comme une punition divine. </div></span></div> 
 
 ne 
 
-<button class="tooltip" style="background-color:rgb(38, 0, 255); color:gold;"> me <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/3.jpg"></div><div class="div2"> Première personne du singulier = solitude de des Grieux. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(38, 0, 255); color:gold;"> me <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/3.jpg"></div><div class="div2"> Première personne du singulier = solitude de des Grieux. </div></span></div> 
 
 trouva point, sans doute, assez rigoureusement 
 
-<button class="tooltip" style="background-color:burlywood; color:crimson;"> puni. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/4.jpg"></div><div class="div2"> Lexique religieux = des Grieux interprète l'évènement comme une punition divine. </div></span></button> 
+<div class="tooltip" style="background-color:burlywood; color:crimson;"> puni. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/4.jpg"></div><div class="div2"> Lexique religieux = des Grieux interprète l'évènement comme une punition divine. </div></span></div> 
 
 Il a voulu que 
 
-<button class="tooltip" style="background-color:rgb(38, 0, 255); color:gold;"> j' <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/3.jpg"></div><div class="div2"> Première personne du singulier = solitude de des Grieux. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(38, 0, 255); color:gold;"> j' <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/3.jpg"></div><div class="div2"> Première personne du singulier = solitude de des Grieux. </div></span></div> 
 
 aie traîné, depuis, une vie languissante et misérable. 
 
-<button class="tooltip" style="background-color:rgb(38, 0, 255); color:gold;"> Je <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/3.jpg"></div><div class="div2"> Première personne du singulier = solitude de des Grieux. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(38, 0, 255); color:gold;"> Je <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/3.jpg"></div><div class="div2"> Première personne du singulier = solitude de des Grieux. </div></span></div> 
 
 renonce volontairement à la mener jamais plus heureuse.  
 
@@ -321,134 +351,134 @@ renonce volontairement à la mener jamais plus heureuse.
 
 Je demeurai plus de 
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> vingt-quatre heures la bouche attaché <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/4.5.jpg"></div><div class="div2"> Hyperbole, champ lexical du corps humain, déterminant possessif. La dernière étreinte des amants est décrite avec précision et sensualité tout en montrant la force de la passion de des Grieux. </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> vingt-quatre heures la bouche attaché <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/4.5.jpg"></div><div class="div2"> Hyperbole, champ lexical du corps humain, déterminant possessif. La dernière étreinte des amants est décrite avec précision et sensualité tout en montrant la force de la passion de des Grieux. </div></span></div> 
 
 sur le visage et sur les mains de ma chère Manon.
 
-<button class="tooltip" style="background-color:rgb(0, 39, 41); color:rgb(220, 153, 20);">  Mon dessein était d’y mourir ; <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/5.jpg"></div><div class="div2"> registre tragique et pathétique, la souffrance de des Grieux est telle qu'il appelle la mort, seule issue possible pour communier avec Manon. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(0, 39, 41); color:rgb(220, 153, 20);">  Mon dessein était d’y mourir ; <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/5.jpg"></div><div class="div2"> registre tragique et pathétique, la souffrance de des Grieux est telle qu'il appelle la mort, seule issue possible pour communier avec Manon. </div></span></div> 
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> mais <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/6.jpg"></div><div class="div2"> L'intervention de la raison est marquée par le connecteur d'opposition : « mais ». </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> mais <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/6.jpg"></div><div class="div2"> L'intervention de la raison est marquée par le connecteur d'opposition : « mais ». </div></span></div> 
 
-<button class="tooltip" style="background-color:aquamarine; color:indianred;"> je fis réflexion, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/7.jpg"></div><div class="div2"> Tout en dramatisant le récit, cette précision réaliste montre que malgré sa passion, des Grieux conserve une forme de lucidité rationnelle. </div></span></button> 
+<div class="tooltip" style="background-color:aquamarine; color:indianred;"> je fis réflexion, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/7.jpg"></div><div class="div2"> Tout en dramatisant le récit, cette précision réaliste montre que malgré sa passion, des Grieux conserve une forme de lucidité rationnelle. </div></span></div> 
 
 au commencement du second jour, que 
 
-<button class="tooltip" style="background-color:aquamarine; color:indianred;"> son corps serait exposé, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/7.jpg"></div><div class="div2"> Tout en dramatisant le récit, cette précision réaliste montre que malgré sa passion, des Grieux conserve une forme de lucidité rationnelle. </div></span></button> 
+<div class="tooltip" style="background-color:aquamarine; color:indianred;"> son corps serait exposé, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/7.jpg"></div><div class="div2"> Tout en dramatisant le récit, cette précision réaliste montre que malgré sa passion, des Grieux conserve une forme de lucidité rationnelle. </div></span></div> 
 
 après mon trépas, à 
 
-<button class="tooltip" style="background-color:aquamarine; color:indianred;"> devenir la pâture des bêtes <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/7;jpg"></div><div class="div2"> Tout en dramatisant le récit, cette précision réaliste montre que malgré sa passion, des Grieux conserve une forme de lucidité rationnelle. </div></span></button> 
+<div class="tooltip" style="background-color:aquamarine; color:indianred;"> devenir la pâture des bêtes <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/7;jpg"></div><div class="div2"> Tout en dramatisant le récit, cette précision réaliste montre que malgré sa passion, des Grieux conserve une forme de lucidité rationnelle. </div></span></div> 
 
-<button class="tooltip" style="background-color:aquamarine; color:indianred;"> sauvages. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/7.jpg"></div><div class="div2"> Tout en dramatisant le récit, cette précision réaliste montre que malgré sa passion, des Grieux conserve une forme de lucidité rationnelle. </div></span></button> 
+<div class="tooltip" style="background-color:aquamarine; color:indianred;"> sauvages. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/7.jpg"></div><div class="div2"> Tout en dramatisant le récit, cette précision réaliste montre que malgré sa passion, des Grieux conserve une forme de lucidité rationnelle. </div></span></div> 
 
 Je formai la 
 
-<button class="tooltip" style="background-color:rgb(0, 39, 41); color:rgb(220, 153, 20);"> résolution de l’enterrer <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/5.jpg"></div><div class="div2"> répétition de la volonté de mourir pour communier avec Manon. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(0, 39, 41); color:rgb(220, 153, 20);"> résolution de l’enterrer <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/5.jpg"></div><div class="div2"> répétition de la volonté de mourir pour communier avec Manon. </div></span></div> 
 
 et 
 
-<button class="tooltip" style="background-color:rgb(0, 39, 41); color:rgb(220, 153, 20);"> d’attendre la mort <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/5.jpg"></div><div class="div2"> répétition de la volonté de mourir pour communier avec Manon. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(0, 39, 41); color:rgb(220, 153, 20);"> d’attendre la mort <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/5.jpg"></div><div class="div2"> répétition de la volonté de mourir pour communier avec Manon. </div></span></div> 
 
 sur sa fosse. J’étais 
 
-<button class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> déjà si proche de ma fin, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> déjà si proche de ma fin, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></div> 
 
 par 
 
-<button class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> l’affaiblissement <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> l’affaiblissement <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></div> 
 
 que 
 
-<button class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> le jeûne et la douleur m’avaient causé, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> le jeûne et la douleur m’avaient causé, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></div> 
 
 que j’eus 
 
-<button class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> besoin de quantité d’efforts <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> besoin de quantité d’efforts <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></div> 
 
 pour me 
 
-<button class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> tenir debout. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> tenir debout. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></div> 
 
 Je fus 
 
-<button class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> obligé de recourir aux liqueurs <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> obligé de recourir aux liqueurs <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></div> 
 
 que j’avais apportées. Elles me rendirent 
 
-<button class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> autant de force <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> autant de force <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></div> 
 
 qu’il en fallait pour 
 
-<button class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> le triste office <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(0, 48, 49); color:rgb(183, 210, 30)olate;"> le triste office <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/8.jpg"></div><div class="div2"> Des Grieux dramatise son récit faisant la démonstration de la grandeur de son sacrifice. </div></span></div> 
 
 que j’allais exécuter. Il ne m’était 
 
-<button class="tooltip" style="background-color:fuchsia; color:gold;"> pas difficile d’ouvrir la terre dans le lieu <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/9.png"></div><div class="div2"> Ces précisions rappellent la lucidité et une forme de recul de des Grieux qui raconte à Renoncour la mort de Manon vécue plus tôt. </div></span></button> 
+<div class="tooltip" style="background-color:fuchsia; color:gold;"> pas difficile d’ouvrir la terre dans le lieu <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/9.png"></div><div class="div2"> Ces précisions rappellent la lucidité et une forme de recul de des Grieux qui raconte à Renoncour la mort de Manon vécue plus tôt. </div></span></div> 
 
 où je me trouvais. C’était 
 
-<button class="tooltip" style="background-color:fuchsia; color:gold;"> une campagne couverte de sable. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/9.png"></div><div class="div2"> Ces précisions rappellent la lucidité et une forme de recul de des Grieux qui raconte à Renoncour la mort de Manon vécue plus tôt. </div></span></button> 
+<div class="tooltip" style="background-color:fuchsia; color:gold;"> une campagne couverte de sable. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/9.png"></div><div class="div2"> Ces précisions rappellent la lucidité et une forme de recul de des Grieux qui raconte à Renoncour la mort de Manon vécue plus tôt. </div></span></div> 
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> Je rompis mon épée, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/10.jpg"></div><div class="div2"> Symbole de l'épée : des Grieux sacrifie sa noblesse à Manon. </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> Je rompis mon épée, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/10.jpg"></div><div class="div2"> Symbole de l'épée : des Grieux sacrifie sa noblesse à Manon. </div></span></div> 
 
 pour 
 
-<button class="tooltip" style="background-color:rgb(34, 78, 255); color:rgb(255, 162, 0)olate;"> m’en servir à creuser ; <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/11.jpeg"></div><div class="div2"> Registre pathétique et détermination du personnage animé par la pureté de son amour. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(34, 78, 255); color:rgb(255, 162, 0)olate;"> m’en servir à creuser ; <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/11.jpeg"></div><div class="div2"> Registre pathétique et détermination du personnage animé par la pureté de son amour. </div></span></div> 
 
 mais j’en tirai 
 
-<button class="tooltip" style="background-color:rgb(34, 78, 255); color:rgb(255, 162, 0)olate;"> moins de secours que de mes mains. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/11.jpeg"></div><div class="div2"> Registre pathétique et détermination du personnage animé par la pureté de son amour. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(34, 78, 255); color:rgb(255, 162, 0)olate;"> moins de secours que de mes mains. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/11.jpeg"></div><div class="div2"> Registre pathétique et détermination du personnage animé par la pureté de son amour. </div></span></div> 
 
-<button class="tooltip" style="background-color:rgb(34, 78, 255); color:rgb(255, 162, 0)olate;"> J’ouvris une large fosse. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/11.jpeg"></div><div class="div2"> Registre pathétique et détermination du personnage animé par la pureté de son amour. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(34, 78, 255); color:rgb(255, 162, 0)olate;"> J’ouvris une large fosse. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/11.jpeg"></div><div class="div2"> Registre pathétique et détermination du personnage animé par la pureté de son amour. </div></span></div> 
 
 J’y plaçai 
 
 l’idole de mon cœur,
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> vingt-quatre heures la bouche attaché <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/12.jpeg"></div><div class="div2"> possessif, hyperbole, éloge funèbre : idéalisation de Manon. La religion de des Grieux est l'amour. </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> vingt-quatre heures la bouche attaché <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/12.jpeg"></div><div class="div2"> possessif, hyperbole, éloge funèbre : idéalisation de Manon. La religion de des Grieux est l'amour. </div></span></div> 
 
 après avoir pris 
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> soin de l’envelopper de tous mes habits <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/13.jpg"></div><div class="div2"> Métonymie, pluriels : des Grieux recouvre Manon de la totalité de ses vêtements : une part de lui va donc dans la fosse. C'est un dénuement absolu qu'il s'impose, signe de son sacrifice total. </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> soin de l’envelopper de tous mes habits <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/13.jpg"></div><div class="div2"> Métonymie, pluriels : des Grieux recouvre Manon de la totalité de ses vêtements : une part de lui va donc dans la fosse. C'est un dénuement absolu qu'il s'impose, signe de son sacrifice total. </div></span></div> 
 
 pour empêcher le sable de la toucher.
 
 Je ne la mis dans cet état 
 
-<button class="tooltip" style="background-color:chartreuse; color:darkred;"> qu’après l’avoir embrassée mille fois, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/14.jpg"></div><div class="div2"> champ lexical de la passion, sensualité; hyperboles. Des Grieux peine à se séparer de Manon idéalisée. </div></span></button> 
+<div class="tooltip" style="background-color:chartreuse; color:darkred;"> qu’après l’avoir embrassée mille fois, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/14.jpg"></div><div class="div2"> champ lexical de la passion, sensualité; hyperboles. Des Grieux peine à se séparer de Manon idéalisée. </div></span></div> 
 
 avec toute 
 
-<button class="tooltip" style="background-color:chartreuse; color:darkred;"> l’ardeur du plus parfait amour. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/14.jpg"></div><div class="div2"> champ lexical de la passion, sensualité; hyperboles. Des Grieux peine à se séparer de Manon idéalisée. </div></span></button> 
+<div class="tooltip" style="background-color:chartreuse; color:darkred;"> l’ardeur du plus parfait amour. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/14.jpg"></div><div class="div2"> champ lexical de la passion, sensualité; hyperboles. Des Grieux peine à se séparer de Manon idéalisée. </div></span></div> 
 
 Je m’assis encore près d’elle. Je la 
 
-<button class="tooltip" style="background-color:rgb(139, 2, 0); color:rgb(255, 208, 89);"> considérai longtemps. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/15.png"></div><div class="div2"> Marqueurs temporels, imparfait indiquant une durée importante. Par opposition au récit de la mort, celui de l'enterrement est raconté longuement : des Grieux cherche à retarder le moment de la disparition définitive de celle qu'il aime. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(139, 2, 0); color:rgb(255, 208, 89);"> considérai longtemps. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/15.png"></div><div class="div2"> Marqueurs temporels, imparfait indiquant une durée importante. Par opposition au récit de la mort, celui de l'enterrement est raconté longuement : des Grieux cherche à retarder le moment de la disparition définitive de celle qu'il aime. </div></span></div> 
 
-<button class="tooltip" style="background-color:rgb(139, 2, 0); color:rgb(255, 208, 89);"> Je ne pouvais me résoudre <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/15.png"></div><div class="div2"> Marqueurs temporels, imparfait indiquant une durée importante. Par opposition au récit de la mort, celui de l'enterrement est raconté longuement : des Grieux cherche à retarder le moment de la disparition définitive de celle qu'il aime. </div></span></button> 
+<div class="tooltip" style="background-color:rgb(139, 2, 0); color:rgb(255, 208, 89);"> Je ne pouvais me résoudre <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/15.png"></div><div class="div2"> Marqueurs temporels, imparfait indiquant une durée importante. Par opposition au récit de la mort, celui de l'enterrement est raconté longuement : des Grieux cherche à retarder le moment de la disparition définitive de celle qu'il aime. </div></span></div> 
 
-<button class="tooltip" style="background-color:rgb(139, 2, 0); color:rgb(255, 208, 89);"> à fermer la fosse. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/15.png"></div><div class="div2"> Marqueurs temporels, imparfait indiquant une durée importante. Par opposition au récit de la mort, celui de l'enterrement est raconté longuement : des Grieux cherche à retarder le moment de la disparition définitive de celle qu'il aime. </div></span></button>
+<div class="tooltip" style="background-color:rgb(139, 2, 0); color:rgb(255, 208, 89);"> à fermer la fosse. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/15.png"></div><div class="div2"> Marqueurs temporels, imparfait indiquant une durée importante. Par opposition au récit de la mort, celui de l'enterrement est raconté longuement : des Grieux cherche à retarder le moment de la disparition définitive de celle qu'il aime. </div></span></div>
 
 Enfin,
 
-<button class="tooltip" style="background-color:rgb(46, 0, 139); color:rgb(89, 255, 147);">  mes forces recommençant à s’affaiblir, et craignant d’en manquer <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/16.1.jpg"></div><div class="div2"> Connecteur temporel, phrase longue, hyperbole. La longueur de la phrase ralentit encore le rythme de l'enterrement. Les hyperboles qui l'achève continue de saturer le texte avec la passion de des Grieux pour Manon. </div></span></button>
+<div class="tooltip" style="background-color:rgb(46, 0, 139); color:rgb(89, 255, 147);">  mes forces recommençant à s’affaiblir, et craignant d’en manquer <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/16.1.jpg"></div><div class="div2"> Connecteur temporel, phrase longue, hyperbole. La longueur de la phrase ralentit encore le rythme de l'enterrement. Les hyperboles qui l'achève continue de saturer le texte avec la passion de des Grieux pour Manon. </div></span></div>
 
-<button class="tooltip" style="background-color:rgb(46, 0, 139); color:rgb(89, 255, 147);"> tout à fait avant la fin de mon entreprise, j’ensevelis pour toujours dans le sein de la terre <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/16.jpg"></div><div class="div2"> Connecteur temporel, phrase longue, hyperbole. La longueur de la phrase ralentit encore le rythme de l'enterrement. Les hyperboles qui l'achève continue de saturer le texte avec la passion de des Grieux pour Manon. </div></span></button>
+<div class="tooltip" style="background-color:rgb(46, 0, 139); color:rgb(89, 255, 147);"> tout à fait avant la fin de mon entreprise, j’ensevelis pour toujours dans le sein de la terre <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/16.jpg"></div><div class="div2"> Connecteur temporel, phrase longue, hyperbole. La longueur de la phrase ralentit encore le rythme de l'enterrement. Les hyperboles qui l'achève continue de saturer le texte avec la passion de des Grieux pour Manon. </div></span></div>
 
-<button class="tooltip" style="background-color:rgb(46, 0, 139); color:rgb(89, 255, 147);"> ce qu’elle avait porté de plus parfait et de plus aimable. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/16%20(1).jpg"></div><div class="div2"> Connecteur temporel, phrase longue, hyperbole. La longueur de la phrase ralentit encore le rythme de l'enterrement. Les hyperboles qui l'achève continue de saturer le texte avec la passion de des Grieux pour Manon. </div></span></button>
+<div class="tooltip" style="background-color:rgb(46, 0, 139); color:rgb(89, 255, 147);"> ce qu’elle avait porté de plus parfait et de plus aimable. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/16%20(1).jpg"></div><div class="div2"> Connecteur temporel, phrase longue, hyperbole. La longueur de la phrase ralentit encore le rythme de l'enterrement. Les hyperboles qui l'achève continue de saturer le texte avec la passion de des Grieux pour Manon. </div></span></div>
  
-<button class="tooltip" style="background-color:rgb(187, 196, 15); color:rgb(255, 56, 56);">  Je me couchai ensuite sur la fosse, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/17.jpg"></div><div class="div2">  Répétition de la volonté de mourir. Des Grieux, pathétique, ne peut se séparer de Manon et veut communier avec elle. Tragiquement, le refus du Ciel peut se lire comme un châtiment supplémentaire. </div></span></button>
+<div class="tooltip" style="background-color:rgb(187, 196, 15); color:rgb(255, 56, 56);">  Je me couchai ensuite sur la fosse, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/17.jpg"></div><div class="div2">  Répétition de la volonté de mourir. Des Grieux, pathétique, ne peut se séparer de Manon et veut communier avec elle. Tragiquement, le refus du Ciel peut se lire comme un châtiment supplémentaire. </div></span></div>
  
-<button class="tooltip" style="background-color:rgb(187, 196, 15); color:rgb(255, 56, 56);"> le visage tourné vers le sable ; <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/17.jpg"></div><div class="div2">  Répétition de la volonté de mourir. Des Grieux, pathétique, ne peut se séparer de Manon et veut communier avec elle. Tragiquement, le refus du Ciel peut se lire comme un châtiment supplémentaire. </div></span></button>
+<div class="tooltip" style="background-color:rgb(187, 196, 15); color:rgb(255, 56, 56);"> le visage tourné vers le sable ; <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/17.jpg"></div><div class="div2">  Répétition de la volonté de mourir. Des Grieux, pathétique, ne peut se séparer de Manon et veut communier avec elle. Tragiquement, le refus du Ciel peut se lire comme un châtiment supplémentaire. </div></span></div>
  
 et, 
 
-<button class="tooltip" style="background-color:rgb(187, 196, 15); color:rgb(255, 56, 56);"> fermant les yeux avec le dessein de ne les ouvrir jamais, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/17.jpg"></div><div class="div2">  Répétition de la volonté de mourir. Des Grieux, pathétique, ne peut se séparer de Manon et veut communier avec elle. Tragiquement, le refus du Ciel peut se lire comme un châtiment supplémentaire. </div></span></button>
+<div class="tooltip" style="background-color:rgb(187, 196, 15); color:rgb(255, 56, 56);"> fermant les yeux avec le dessein de ne les ouvrir jamais, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/17.jpg"></div><div class="div2">  Répétition de la volonté de mourir. Des Grieux, pathétique, ne peut se séparer de Manon et veut communier avec elle. Tragiquement, le refus du Ciel peut se lire comme un châtiment supplémentaire. </div></span></div>
 
-<button class="tooltip" style="background-color:rgb(187, 196, 15); color:rgb(255, 56, 56);"> j’invoquai le secours du Ciel, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/17.jpg"></div><div class="div2">  Répétition de la volonté de mourir. Des Grieux, pathétique, ne peut se séparer de Manon et veut communier avec elle. Tragiquement, le refus du Ciel peut se lire comme un châtiment supplémentaire. </div></span></button>
+<div class="tooltip" style="background-color:rgb(187, 196, 15); color:rgb(255, 56, 56);"> j’invoquai le secours du Ciel, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/17.jpg"></div><div class="div2">  Répétition de la volonté de mourir. Des Grieux, pathétique, ne peut se séparer de Manon et veut communier avec elle. Tragiquement, le refus du Ciel peut se lire comme un châtiment supplémentaire. </div></span></div>
 
 et 
 
-<button class="tooltip" style="background-color:rgb(187, 196, 15); color:rgb(255, 56, 56);">  j’attendis la mort avec impatience. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/17.jpg"></div><div class="div2">  Répétition de la volonté de mourir. Des Grieux, pathétique, ne peut se séparer de Manon et veut communier avec elle. Tragiquement, le refus du Ciel peut se lire comme un châtiment supplémentaire. </div></span></button>
+<div class="tooltip" style="background-color:rgb(187, 196, 15); color:rgb(255, 56, 56);">  j’attendis la mort avec impatience. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-7-Manon-Lescaut-Mort/main/17.jpg"></div><div class="div2">  Répétition de la volonté de mourir. Des Grieux, pathétique, ne peut se séparer de Manon et veut communier avec elle. Tragiquement, le refus du Ciel peut se lire comme un châtiment supplémentaire. </div></span></div>
 
 
 
@@ -458,7 +488,9 @@ et
 
 </br></br>
 
-<p class="légende">
+</div>
+ 
+ <p class="légende">
   Histoire du chevalier des Grieux et de Manon Lescaut, Abbé Prévost, 1753, Première partie.
 </p>
 
@@ -486,9 +518,9 @@ Comment est formé le mot « Saint-Lazare » ? </br>
 </p>
     </p>
 
- <button class="tooltip" style="background-color: chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">
+ <div class="tooltip" style="background-color: chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">
     Procédés Littéraires et Stylistiques = 18
-</button>
+</div>
 
 </br></br>
 
@@ -508,11 +540,11 @@ Comment est formé le mot « Saint-Lazare » ? </br>
 
     <div class="source">
 
-      <div class="div1">
+      <div class="intro_div">
         <a href="https://arjunak07.github.io/Accueil-Premiere/"> <img class="logo_akatsuki" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/logo%20akatsuki.png"> </a>
       </div>
     
-      <div class="div2">
+      <div class="outro_div">
         <span class="OUTRO">
           FAIT PAR L'AKATSUKI DES CODEURS, PROPULSÉ PAR LE LYCÉE ANDRÉ MALRAUX
         </span>
